@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Portfolio | Strategic Growth & Digital Campaigns</title>
+    <meta name="description" content="Explore the marketing portfolio of Malavika Adiga. A curated showcase of data-driven digital campaigns, e-commerce CRO, brand strategy, and web optimization across premium brands.">
+    
+    <!-- Open Graph Tags for Social Media & CV Previews -->
+    <meta property="og:title" content="Malavika Adiga | Digital Campaigns & Strategy">
+    <meta property="og:description" content="A curated showcase of data-driven digital campaigns, e-commerce CRO, brand strategy, and web optimization.">
+    <meta property="og:type" content="website">
+    
+    <!-- Elegant Typography (Playfair Display for headers, Inter for clean UI) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: #0b1511;       /* Deep, sophisticated obsidian green */
+            --card-bg: #14221c;        /* Rich forest green card background */
+            --card-hover: #1b2e26;     /* Elevated green for active interactions */
+            --text-primary: #f4f6f5;   /* Crisp, elegant off-white text */
+            --text-muted: #94a39d;     /* Soft sage green for secondary text */
+            --accent: #d4af37;         /* Timeless muted gold highlight */
+            --accent-glow: rgba(212, 175, 55, 0.15);
+            --border-color: rgba(148, 163, 157, 0.15);
+            --font-serif: 'Playfair Display', Georgia, serif;
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: var(--font-sans);
+            line-height: 1.6;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 580px;
+            margin: 0 auto;
+        }
+
+        /* Profile Header Section */
+        header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .profile-avatar {
+            width: 84px;
+            height: 84px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent), var(--card-bg));
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-serif);
+            font-size: 28px;
+            font-weight: 600;
+            color: var(--bg-color);
+            border: 2px solid var(--accent);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            font-family: var(--font-serif);
+            font-size: 28px;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 500;
+            margin-bottom: 16px;
+        }
+
+        .bio {
+            font-size: 15px;
+            color: var(--text-muted);
+            max-width: 460px;
+            margin: 0 auto;
+            font-weight: 300;
+        }
+
+        /* Collapsible Accordion Sections */
+        details {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            margin-bottom: 18px;
+            overflow: hidden;
+            transition: var(--transition);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        details[open] {
+            border-color: rgba(212, 175, 55, 0.4);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+        }
+
+        summary {
+            list-style: none;
+            padding: 22px 24px;
+            font-family: var(--font-serif);
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--text-primary);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+            transition: var(--transition);
+        }
+
+        summary:hover {
+            background-color: var(--card-hover);
+            color: var(--accent);
+        }
+
+        /* Custom Accordion Arrow indicator */
+        summary::after {
+            content: '→';
+            font-family: var(--font-sans);
+            font-size: 16px;
+            color: var(--text-muted);
+            transition: var(--transition);
+        }
+
+        details[open] summary::after {
+            transform: rotate(90deg);
+            color: var(--accent);
+        }
+
+        /* Webkit specific arrow removal */
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        /* Inside Accordion Content Panel */
+        .content-panel {
+            padding: 0 24px 24px 24px;
+            border-top: 1px solid rgba(148, 163, 157, 0.08);
+            background: linear-gradient(180deg, var(--card-bg), #0f1915);
+        }
+
+        .employer-desc {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-top: 16px;
+            margin-bottom: 20px;
+            font-weight: 300;
+            line-height: 1.5;
+        }
+
+        /* Smooth Link Button System */
+        .portfolio-btn {
+            display: block;
+            text-decoration: none;
+            background-color: rgba(11, 21, 17, 0.6);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 16px 20px;
+            margin-bottom: 12px;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .portfolio-btn:last-child {
+            margin-bottom: 0;
+        }
+
+        .portfolio-btn:hover {
+            border-color: var(--accent);
+            background-color: var(--card-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px var(--accent-glow);
+        }
+
+        .btn-title {
+            display: block;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+            transition: var(--transition);
+        }
+
+        .portfolio-btn:hover .btn-title {
+            color: var(--accent);
+        }
+
+        .btn-sub {
+            display: block;
+            font-size: 12px;
+            color: var(--text-muted);
+            font-weight: 400;
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            margin-top: 48px;
+            font-size: 12px;
+            color: var(--text-muted);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Mobile specific enhancements */
+        @media (max-width: 480px) {
+            body {
+                padding: 24px 16px;
+            }
+            header {
+                margin-bottom: 36px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            summary {
+                padding: 18px 20px;
+                font-size: 16px;
+            }
+            .content-panel {
+                padding: 0 20px 20px 20px;
+            }
+            .portfolio-btn {
+                padding: 14px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- Profile Header -->
+        <header>
+            <div class="profile-avatar">M</div>
+            <h1>[Your Name]</h1>
+            <div class="subtitle">Digital Marketer & Campaign Strategist</div>
+            <p class="bio">A professional index of end-to-end digital marketing initiatives, featuring localized enterprise video strategy, e-commerce optimization, and cross-industry digital design solutions.</p>
+        </header>
+
+        <!-- Main Accordion Content Map -->
+        <main>
+
+            <!-- Section 1: Dolby India -->
+            <details>
+                <summary>Dolby India</summary>
+                <div class="content-panel">
+                    <p class="employer-desc">Spearheaded digital video content strategies to drive deep engagement and local audience affinity through targeted, narrative-driven YouTube marketing campaigns.</p>
+                    
+                    <a href="https://www.youtube.com/watch?v=e6TAzGQtXKc" target="_blank" class="portfolio-btn">
+                        <span class="btn-title">🎬 Video Campaign Feature • Initiative I</span>
+                        <span class="btn-sub">YouTube Campaign Strategy & Digital Storytelling</span>
+                    </a>
+                    
+                    <a href="https://www.youtube.com/watch?v=6xrfusaKy9g" target="_blank" class="portfolio-btn">
+                        <span class="btn-title">🔊 Brand Strategy & Content Localization • Initiative II</span>
+                        <span class="btn-sub">Audience Engagement & Multi-Channel Video Production</span>
+                    </a>
+                    
+                    <a href="https://www.youtube.com/watch?v=B_bfRGiUan8" target="_blank" class="portfolio-btn">
+                        <span class="btn-title">📈 Creative Direction & Video Analytics • Initiative III</span>
+                        <span class="btn-sub">High-Performance Media Placement & Audience Insights</span>
+                    </a>
+
+                    <a href="https://www.youtube.com/watch?v=kgu06EPAcrg" target="_blank" class="portfolio-btn">
+                        <span class="btn-title">🎯 Digital Reach & Narrative Expansion • Initiative IV</span>
+                        <span class="btn-sub">Growth-Driven Video Content Operations</span>
+                    </a>
+                </div>
+            </details>
+
+            <!-- Section 2: Boring Commerce -->
+            <details>
+                <summary>Boring Commerce</summary>
+                <div class="content-panel">
+                    <p class="employer-desc">Engineered high-converting e-commerce web architectures, combining full-funnel Conversion Rate Optimization (CRO) with organic social structures to scale revenue.</p>
+                    
+                    <a href="https://www.myravedaluxury.com/?srsltid=AfmBOooKT9TM4nMrCqhwNT6hvwflnsnbvm_ZzGXEXXHHqus6TJ3Oaftb" target="_blank" class="portfolio-btn">
+                        <span class="btn-title">💎 E-Commerce CRO & Premium Positioning • Myraveda Luxury</span>
+                        <span class="btn-sub">Digital Storefront Architecture, UX Mapping & Direct Sales Scaling</span>
+                    </a>
+                    
+                    <a href="https://thecoconutpeople.in/?srsltid=AfmBOoryg8I2GESzzOwuUiT8ZRHSoqefQ9KSY7z0y2l5FsVvRukqVAAL" target="_blank" class="portfolio-btn">
+                        <span class="btn-title">🥥 D2C Web Strategy & Social Campaign Integration • The Coconut People</span>
+                        <span class="btn-sub">Funnel Optimization, Brand Positioning & Multi-Channel Commerce</span>
+                    </a>
+                    
+                    <a href="https://anaghadesigns.com/" target="_blank" class="portfolio-btn">
+                        <span class="btn-title">👗 Full-Funnel Growth Infrastructure • Anagha Designs</span>
+                        <span class="btn-sub">E-Commerce Deployment, Social Lead Magnets & Audience Retargeting</span>
+                    </a>
+                </div>
+            </details>
+
+            <!-- Section 3: Garnet Media -->
+            <details>
+                <summary>Garnet Media</summary>
+                <div class="content-panel">
+                    <p class="employer-desc">Executed digital transformations across hyper-specific sectors, specializing in web asset development, structural SEO optimization, and premium social media grid aesthetics.</p>
+                    
+                    <a href="https://www.fiora.in/?srsltid=AfmBOoq_auBm0qdmcBD5GwZtbJ6hB-MHsPwJleqyMLhcQ7lOvr7nKU5p" target="_blank" class="portfolio-btn">
+                        <span class="btn-title">💐 Retail Storefront Architecture & UX Design • Fiora Florists</span>
+                        <span class="btn-sub">Web Development, Seamless Discovery Optimization & Local Brand Footprint</span>
+                    </a>
+                    
+                    <a href="https://onegolf.in/" target="_blank" class="portfolio-btn">
+                        <span class="btn-title">🏌️‍♂️ Luxury Hospitality Identity & Digital Funnels • OneGolf</span>
+                        <span class="btn-sub">Premium UI Architecture, Asset Optimization & Conversion Engine Deployment</span>
+                    </a>
+
+                    <a href="https://www.instagram.com/thesanctuarykitchenhyd/?hl=en" target="_blank" class="portfolio-btn">
+                        <span class="btn-title">🍽️ Social Ecosystem & Visual Grid Grid Strategy • The Sanctuary</span>
+                        <span class="btn-sub">Instagram Visual Branding, Direct Messaging Funnels & Content Architecture</span>
+                    </a>
+                    
+                    <a href="https://jwalaguttaacademy.com/" target="_blank" class="portfolio-btn">
+                        <span class="btn-title">🏸 High-Traffic Sports Brand Ecosystem • Jwala Gutta Academy</span>
+                        <span class="btn-sub">Integrated Web Development, Dynamic Asset Sizing & Brand Authority Building</span>
+                    </a>
+
+                    <a href="https://www.instagram.com/jwalaguttaacademy/?hl=en" target="_blank" class="portfolio-btn">
+                        <span class="btn-title">📱 High-Engagement Community Cultivation • Jwala Gutta Academy IG</span>
+                        <span class="btn-sub">Strategic Social Content Distribution, Brand Authority & Direct Interaction</span>
+                    </a>
+
+                    <a href="https://www.leapingfrogs.in/" target="_blank" class="portfolio-btn">
+                        <span class="btn-title">🏫 Niche Audience Targeting & Dynamic UI Redesign • Leaping Frogs</span>
+                        <span class="btn-sub">Parent-Facing Trust Infrastructures, Technical SEO & Responsive Performance</span>
+                    </a>
+
+                    <a href="https://www.instagram.com/rasatelangana/?hl=en" target="_blank" class="portfolio-btn">
+                        <span class="btn-title">✨ Curated Lifestyle Content Optimization • Rasa Telangana</span>
+                        <span class="btn-sub">Aesthetic Development, Micro-Copywriting & Intent-Based Social Growth</span>
+                    </a>
+
+                    <a href="https://www.instagram.com/highanddrystudio/?hl=en" target="_blank" class="portfolio-btn">
+                        <span class="btn-title">📸 Boutique Studio Authority Engine • High & Dry Studio</span>
+                        <span class="btn-sub">Visual Positioning, Grid Continuity Mapping & Niche Target Engagement</span>
+                    </a>
+                </div>
+            </details>
+
+        </main>
+
+        <!-- Footer Footer -->
+        <footer>
+            Connect with me on <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+        </footer>
+
+    </div>
+
+</body>
+</html>
